@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8"/>
+		<link href="estilos.css" rel="stylesheet"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<h1 class="d-flex justify-content-center align-items-center">
+				<span class="coral"><3</span>TO A DOG
+			</h1>
+		</header>
+		<body>
+			<div class="mb-3 d-flex justify-content-center align-items-center">
+				<button class="btn btn-secondary" id="botonPerroRaza">imagen por raza</button>
+				<select id="selectorRaza">
+					<option value="airedale">Airedale</option>
+					<option value="affenpinscher">Affenpinscher</option>
+					<option value="akita">Akita</option>
+					<option value="appenzeller">Appenzeller</option>
+					<option value="basenji">Basenji</option>
+					<option value="beagle">Beagle</option>
+					<option value="bluetick">Bluetick</option>
+					<option value="borzoi">Borzoi</option>
+					<option value="bouvier">Bouvier</option>
+					<option value="boxer">Boxer</option>
+					<option value="brabancon">Brabancon</option>
+					<option value="briard">Briard</option>
+					<option value="chihuahua">Chihuahua</option>
+					<option value="chow">Chow</option>
+					<option value="clumber">Clumber</option>
+					<option value="coonhound">Coonhound</option>
+					<option value="doberman">Doberman</option>
+					<option value="entlebucher">Entlebucher</option>
+					<option value="eskimo">Eskimo</option>
+					<option value="germanshepherd">Germanshepherd</option>
+					<option value="groenendael">Groenendael</option>
+					<option value="havanese">Havanese</option>
+					<option value="shiba">Shiba</option>
+				</select>
+			</div>
+			<div class="mb-3 d-flex justify-content-center align-items-center">
+				<button class="btn btn-primary" id="botonPerroAleatorio">imagen aleatoria</button>
+			</div>
+			<div class="container d-flex justify-content-center align-items-center">
+				<div class="row">
+					<div class="col">
+						<div class="grande">
+							<img src="recursos/place-holder.jpeg" id="imgRandom" class="grande" alt="si lee esto, es error del api">
+						</div>
+					</div>	
+					<div class="col">
+						<button class="btn " id="like">
+							<img src="recursos/like.png" class="chico">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center align-items-center">
+				<h3>Imágenes vistas:<span id="contador">0</span></h3>
+			</div>
+
+			<div>
+				<h2 class="d-flex justify-content-center align-items-center">LIKES</h2>
+				<table id="tabla" class="table table-striped">
+					<thead>
+						<th id="th-source">source</th>
+						<th id="th-imagen">imagen</th>
+						<th id="th-accion">accion</th>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</body>
+		<footer>
+			<p>Proyecto realizado por: Jairo H Lopez Velazco</p>
+		</footer>
+		<script src="scripts.js"></script>
+	</body>
+</html>

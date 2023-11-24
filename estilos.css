@@ -1,0 +1,35 @@
+.grande{
+	width: 300px;
+	height: 300px;
+}
+.mediano{
+	width: 150px;
+	height: 150px;
+}
+.chico{
+	width: 50;
+	height: 50px;
+}
+#like{
+	background: lightcoral;
+}
+
+#th-source{
+	width: auto;
+}
+
+#th-imagen{
+	width: auto;
+}
+
+table{
+	width: 100%;
+}
+
+th,td{
+	text-align: center;
+}
+
+.coral{
+	color: lightcoral;
+}
