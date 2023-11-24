@@ -10,15 +10,12 @@ let imagenID = 0
 
 function init(){
 	botonRandom = document.getElementById('botonPerroAleatorio')
-	botonRaza = document.getElementById('botonPerroRaza')
 	imagen = document.getElementById('imgRandom')
 	selectorRaza = document.getElementById('selectorRaza')
 	etiquetaContadora = document.getElementById('contador')
 	tabla = document.querySelector('#tabla > tbody')
 	botonLike = document.getElementById('like')
-
-	botonRandom.addEventListener('click',getDataRandom)
-	botonRaza.addEventListener('click',getDataRaza)
+	botonRandom.addEventListener('click',getSelectorValue)
 	botonLike.addEventListener('click',darLike)
 }
 
@@ -95,5 +92,13 @@ function darLike(){
 	})
 	playAudio('like')
 	imagenID++
+}
+
+function getSelectorValue(){
+	if(selectorRaza.value === 'random'){
+		getDataRandom()
+	}else{
+		getDataRaza()
+	}
 }
 window.addEventListener('load', init)
